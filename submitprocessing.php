@@ -5,6 +5,7 @@ $password= $_POST["password"];
 $role=$_POST["role"];
 
 
+
 switch($role){
     case "faculty":
       header("Location:facultysubmitform.html");
