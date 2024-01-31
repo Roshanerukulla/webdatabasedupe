@@ -10,14 +10,25 @@
 
         form {
             width: 300px;
-            /* Adjust the width as needed */
             margin: 0 auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             display: inline-block;
         }
-        
+        form.small-form {
+            width: 150px;
+            font-size: 12px;
+        }
+        button.small-button{
+            background-color: red;
+            color: white;
+            padding: 5px 5px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            
+        }
         button {
             background-color: #4CAF50;
             color: white;
@@ -71,6 +82,12 @@
             <button type="submit">Submit</button>
         </p>
     </form>
+   <!-- form for closing application  -->
+   <form class="small-form" action="process_close_position.html" method="post">
+    <h2>Close Position</h2>
+    <label for="closeDecision">Do you want to close any position?</label>
+    <button class="small-button" type="submit">Yes</button>
+</form>
 </body>
 
 </html>
