@@ -1,13 +1,14 @@
 <?php
 include "dbconnection.php";
 
-$sql = "SELECT jobtitle, jobdes, jobreq, jobpay, jobskills, info ,position FROM jobs";
+$sql = "SELECT id,jobtitle, jobdes, jobreq, jobpay, jobskills, info ,position FROM jobs";
 $result = $conn->query($sql);
 
 // Display the fetched data
 if ($result->num_rows > 0) {
     echo "<table border='1'>
             <tr>
+                <th>id</th>
                 <th>Job Title</th>
                 <th>Job Description</th>
                 <th>Job Requirements</th>
@@ -19,6 +20,7 @@ if ($result->num_rows > 0) {
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>
+                <td>{$row['id']}</td>
                 <td>{$row['jobtitle']}</td>
                 <td>{$row['jobdes']}</td>
                 <td>{$row['jobreq']}</td>
