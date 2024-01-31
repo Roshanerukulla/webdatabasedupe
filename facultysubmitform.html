@@ -16,19 +16,22 @@
             border-radius: 5px;
             display: inline-block;
         }
+
         form.small-form {
             width: 150px;
             font-size: 12px;
         }
-        button.small-button{
+
+        button.small-button {
             background-color: red;
             color: white;
             padding: 5px 5px;
             border: none;
             border-radius: 2px;
             cursor: pointer;
-            
+
         }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -45,9 +48,9 @@
         <p>Enter required details:</p>
         <p>
             <label for="jobtitle">JobTitle</label>
-        <input type="text" name="jobtitle" id="jobtitle">
+            <input type="text" name="jobtitle" id="jobtitle">
         </p>
-        <p> 
+        <p>
             <label for="jobdes">JobDescription</label>
             <input type="text" name="jobdes" id="jobdes">
         </p>
@@ -58,8 +61,8 @@
         </p>
         <p>
             <label for="jobpay">JobPay</label>
-        <input type="text" name="jobpay" id="jobpay">
-        <br>
+            <input type="text" name="jobpay" id="jobpay">
+            <br>
         </p>
         <p>
             <label for="jobskills">JobSkills</label>
@@ -68,8 +71,8 @@
         </p>
         <p>
             <label for="info">ContactInfo</label>
-        <input type="text" name="info" id="info">
-        <br>
+            <input type="text" name="info" id="info">
+            <br>
         </p>
         <p>
         <p>Select position:</p>
@@ -82,12 +85,14 @@
             <button type="submit">Submit</button>
         </p>
     </form>
-   <!-- form for closing application  -->
-   <form class="small-form" action="process_close_position.html" method="post">
-    <h2>Close Position</h2>
-    <label for="closeDecision">Do you want to close any position?</label>
-    <button class="small-button" type="submit">Yes</button>
-</form>
+    <p>
+    <form class="small-form" action="process_close_position.html" method="post">
+        <h2>Close Position</h2>
+        <label for="closeDecision">Do you want to close any position?</label>
+        <button class="small-button" type="submit">Yes</button>
+        </p>
+
+    </form>
 </body>
 
 </html>
