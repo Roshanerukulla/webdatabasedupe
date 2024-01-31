@@ -13,7 +13,7 @@ $info=$_POST["info"];
 $position=$_POST["position"];
 
  // Insert data into the database
- $sql = "INSERT INTO jobposted (jobtitle, jobdes, jobreq, jobpay, jobskills, info, position) VALUES ('$jobtitle, $jobdes, $jobreq, $jobpay, $jobskills, $info, $position)";
+ $sql = "INSERT INTO jobs (jobtitle, jobdes, jobreq, jobpay, jobskills, info, position) VALUES ('$jobtitle, $jobdes, $jobreq, $jobpay, $jobskills, $info, $position)";
 
  if (mysqli_query($conn, $sql)) {
      echo "New record created successfully";
